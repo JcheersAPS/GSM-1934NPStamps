@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="Explore the Great Smoky Mountains 10-cent stamp. Move the divider to compare the engraved landscape with its aligned photograph.">
+  <title>Great Smoky Mountains · Photograph and engraving</title>
+<link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/comparison.js" defer></script>
+</head>
+<body>
+<main>
+<section aria-labelledby="title">
+<p class="kicker">United States postage · 10 cents</p>
+<h1 id="title"><span>Great Smoky</span> <span>Mountains</span></h1>
+<p class="description">Follow the tall pine and the mountain ridges from photograph to engraving. Drag the divider to compare the aligned details.</p>
+<div class="actions"><button class="original" data-original="photo">View full photograph</button><button class="original" data-original="stamp">View full stamp</button></div>
+</section>
+<figure aria-label="Aligned landscape comparison">
+<div class="names" aria-hidden="true"><span>Photograph</span><span>Engraving</span></div>
+<div class="comparison" id="comparison">
+<img width="773" height="1023" src="./assets/engraving-detail.webp" alt="Engraved pine and mountain ridges from the stamp." draggable="false">
+<img width="773" height="1023" class="photograph" src="./assets/photograph-detail.webp" alt="Matching portion of the photograph, aligned to the engraved landscape." draggable="false">
+<span class="line"></span><span class="handle" aria-hidden="true"><svg viewBox="0 0 26 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 4-4 4 4 4m10-8 4 4-4 4"/></svg></span>
+<input id="divider" type="range" min="0" max="100" step=".1" value="60" aria-label="Amount of the photograph revealed" aria-valuetext="60 percent photograph">
+</div>
+<figcaption class="foot"><span>Aligned landscape detail</span><button class="reset" id="reset">Center divider</button></figcaption>
+</figure>
+</main>
+<dialog id="originalDialog" aria-labelledby="originalTitle"><div class="dialogbox"><div class="dialogbar"><strong id="originalTitle"></strong><button type="button" class="close" id="closeDialog" autofocus>Close</button></div><img id="fullImage" alt=""></div></dialog>
+
+</body>
+</html>
