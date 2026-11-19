@@ -18,12 +18,12 @@ document.getElementById('reset').addEventListener('click', () => {
 const originals = {
   photo: {
     title: 'Full photograph',
-    src: './assets/photograph.jpg',
+    src: './photograph.jpg',
     alt: 'Vertical black-and-white photograph of mountain ridges below a clouded sky, with a tall pine on the right.'
   },
   stamp: {
     title: 'Full stamp',
-    src: './assets/stamp.jpg',
+    src: './stamp.jpg',
     alt: 'The complete perforated Great Smoky Mountains 10-cent stamp.'
   }
 };
